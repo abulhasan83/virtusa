@@ -1,0 +1,102 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "User is on the home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-02-01T11:53:22.240Z",
+        "before": [
+          {
+            "result": {
+              "duration": 245431879300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksAmazoon.launchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify the product search",
+        "description": "",
+        "id": "validate-user-login-credentials;verify-the-product-search",
+        "after": [
+          {
+            "result": {
+              "duration": 334832600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksAmazoon.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11124047800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User enters the product in the search field",
+            "match": {
+              "location": "LogStepDef.user_enters_the_product_in_the_search_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14952072500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks the search button",
+            "match": {
+              "location": "LogStepDef.user_clicks_the_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigate to product listing",
+            "match": {
+              "location": "LogStepDef.user_navigate_to_product_listing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should seen the desired product list",
+            "match": {
+              "location": "LogStepDef.user_should_seen_the_desired_product_list()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validate user login credentials",
+    "description": "",
+    "id": "validate-user-login-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feartures/login.feature",
+    "tags": []
+  }
+]
